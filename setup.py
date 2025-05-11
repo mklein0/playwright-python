@@ -42,12 +42,19 @@ base_wheel_bundles = [
         "platform": "darwin",
         "zip_name": "mac-arm64",
     },
+# For no-manylinux the package extension is only linux
     {
-        "wheel": "manylinux1_x86_64.whl",
+        "wheel": "linux_x86_64.whl",
         "machine": "x86_64",
         "platform": "linux",
         "zip_name": "linux",
     },
+#    {
+#        "wheel": "manylinux1_x86_64.whl",
+#        "machine": "x86_64",
+#        "platform": "linux",
+#        "zip_name": "linux",
+#    },
     {
         "wheel": "manylinux_2_17_aarch64.manylinux2014_aarch64.whl",
         "machine": "aarch64",
