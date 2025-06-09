@@ -54,6 +54,7 @@ include-package-data = true
 
 [tool.setuptools_scm]
 version_file = "playwright/_repo_version.py"
+tag_regex = "^(?:[\\w-]+-)?(?P<version>[vV]?\\d+(?:\\.\\d+){0,2}[^\\+]*(?:\\+.*)?)$"
 
 [tool.pytest.ini_options]
 addopts = "-Wall -rsx -vv -s"
